@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Phantom</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header>
+            <div class="logo">
+                <img src="images/logo.png" alt="Fitness Phantom Logo">
+            </div>
+            <h1>Fitness Phantom</h1>
+        </header>
+        
+        <!-- Description Section -->
+        <section class="description">
+            <h2>Welcome to Fitness Phantom</h2>
+            <p>At Fitness Phantom, we provide personalized online training courses for people of all ages to eat healthier and stay active. Whether you're looking for light physiotherapy exercises, general fitness, or recovery plans, we craft customized guides that make your goals achievable. Sign up today and let us help you become the best version of yourself!</p>
+        </section>
+
+        <!-- Survey Button -->
+        <div class="survey-btn">
+            <button id="start-survey">Take the Survey</button>
+        </div>
+
+        <!-- Survey Modal -->
+        <div id="survey-modal" class="modal hidden">
+            <div class="modal-content">
+                <h3>Personalized Training Survey</h3>
+                <form id="survey-form">
+                    <label for="diet">How would you describe your current diet?</label>
+                    <textarea id="diet" required></textarea>
+                    
+                    <label for="activity">How often do you currently exercise?</label>
+                    <select id="activity" required>
+                        <option value="none">Never</option>
+                        <option value="rarely">Rarely</option>
+                        <option value="regularly">Regularly</option>
+                        <option value="intensely">Intensely</option>
+                    </select>
+
+                    <label for="goal">What is your fitness goal?</label>
+                    <textarea id="goal" required></textarea>
+
+                    <label for="injury">Do you have any injuries or physical limitations?</label>
+                    <textarea id="injury"></textarea>
+
+                    <button type="submit">Submit Survey</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Sign-Up Section -->
+        <section id="signup-section" class="hidden">
+            <h2>Your Personalized Course is Ready!</h2>
+            <p>Sign up now to unlock your custom fitness and nutrition plan for just £4.49/month!</p>
+            <button id="signup-button">Sign Up</button>
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

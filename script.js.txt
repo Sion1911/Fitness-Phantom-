@@ -1,0 +1,30 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const surveyButton = document.getElementById('start-survey');
+    const surveyModal = document.getElementById('survey-modal');
+    const surveyForm = document.getElementById('survey-form');
+    const signupSection = document.getElementById('signup-section');
+
+    // Show survey modal
+    surveyButton.addEventListener('click', () => {
+        surveyModal.classList.remove('hidden');
+    });
+
+    // Handle survey submission
+    surveyForm.addEventListener('submit', (event) => {
+        event.preventDefault();
+
+        // Generate a basic message (custom course generation logic can be added)
+        alert('Thank you for completing the survey! Your personalized course is ready.');
+
+        // Hide survey modal and show signup section
+        surveyModal.classList.add('hidden');
+        signupSection.classList.remove('hidden');
+    });
+
+    // Signup button functionality (placeholder for account creation)
+    const signupButton = document.getElementById('signup-button');
+    signupButton.addEventListener('click', () => {
+        alert('Redirecting to payment page...');
+        // Here, you can integrate actual payment and account creation logic.
+    });
+});
